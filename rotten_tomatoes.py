@@ -21,17 +21,25 @@ def getMovie(link):
     r.raise_for_status()
     soup = bs4.BeautifulSoup(r.text, 'html.parser')
 
-    title = soup.select_one('.scoreboard__title').contents
-    print(title)
+    title = soup.select_one('.scoreboard__title').text
+    info = soup.select_one('.scoreboard__info').text
+    split = info.split(', ')
+    genres = split[1].split('/')
+    runtime = pd.Timedelta(split[2])        # Could also use datetime.timedelta. Maybe parse the string datetime.datetime.strptime or dateutil.parser
+    tomato = soup.select_one('.tomatometer-container .percentage').text
+    tomato = tomato[:-1]                    # removes last char which is '%'. If needed, can also strip but unnecessary here.
+    audience = soup.select_one('.audience-container .percentage').text
+    audience = audience[:-1]
+
+    return [title, genres, runtime, tomato, audience]
 
 def getMovies(links, workers=5):
     movies = []
     with ThreadPoolExecutor(workers) as exec:
-        exec.map(getMovie, links)
-
-    # for link in links:
-    #     getMovie(link)
+        return exec.map(getMovie, links)
 
 if __name__ == '__main__':
     links = getMovieLinks(2020)
-    getMovies(links)
+    data = getMovies(links)
+    df = pd.DataFrame(data, columns=['Title', 'Genres', 'Runtime', 'Tomato %', 'Audience %'])
+    print(df.head)
