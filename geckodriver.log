@@ -1,0 +1,617 @@
+1650151116255	geckodriver	INFO	Listening on 127.0.0.1:60383
+1650151119298	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60384" "-no-remote" "-profile" "C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofileNIm9lE"
+1650151119741	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofileNIm9lE\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60384/devtools/browser/4389bfe0-5b20-475d-b025-0fbbffb68308
+1650151121823	Marionette	INFO	Listening on port 60389
+1650151121953	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1650151122276	Marionette	INFO	Stopped listening on port 60389
+1650151216492	geckodriver	INFO	Listening on 127.0.0.1:60435
+1650151219528	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60436" "-no-remote" "-profile" "C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofileUDRuVI"
+1650151219822	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofileUDRuVI\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60436/devtools/browser/494e79dd-9295-4c67-a1f2-fdd3cd516d9b
+1650151221784	Marionette	INFO	Listening on port 60441
+1650151222194	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1650151226757	Marionette	INFO	Stopped listening on port 60441
+1650151282002	geckodriver	INFO	Listening on 127.0.0.1:60492
+1650151285029	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60493" "-no-remote" "-profile" "C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofile5nPPYT"
+1650151285345	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofile5nPPYT\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60493/devtools/browser/a8e2cf52-60c0-4fee-92c2-496bd938da11
+1650151287321	Marionette	INFO	Listening on port 60498
+1650151287690	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1650151292004	Marionette	INFO	Stopped listening on port 60498
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1650152854084	geckodriver	INFO	Listening on 127.0.0.1:60767
+1650152857223	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "60768" "-no-remote" "-profile" "C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofileZDtwol"
+*** You are running in headless mode.
+1650152857549	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofileZDtwol\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60768/devtools/browser/10de1ff4-834a-4c34-8da5-46ce63e7727c
+1650152858704	Marionette	INFO	Listening on port 60773
+1650152858771	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://assets.adobedtm.com/launch-EN549327edc13e414a9beb5d61bfd9aac6.min.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.rottentomatoes.com/m/yes_god_yes line 231 > injectedScript, line 2: TypeError: a is null
+JavaScript warning: https://www.rottentomatoes.com/rt-common.js?seed=AMA8tjSAAQAAVEq00qiJZxKGv6RHRzfm1v1BaClBnXFrfN5wAsIn-A-9rJTv&HgdtNmCjYr--z=q, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://z.moatads.com/nbcuyieldheader7581548001/moatheader.js, line 215: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.rottentomatoes.com/Z4fZWb13_BzGM2waCg/pi3cXXfV/GRsXSw/WC1qeQdz/BGU, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/jCkUzW4MJun-Op3iOFNjK-GGKJG_m8_dpwU-GZUxlWM.js line 1 > eval line 6957 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1650153348749	geckodriver	INFO	Listening on 127.0.0.1:49338
+1650153351778	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "49339" "-no-remote" "-profile" "C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofileX38XiX"
+*** You are running in headless mode.
+1650153352083	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofileX38XiX\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49339/devtools/browser/b592acbf-5932-437a-adb4-521e51ccb0bd
+1650153353173	Marionette	INFO	Listening on port 49344
+1650153353338	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://assets.adobedtm.com/launch-EN549327edc13e414a9beb5d61bfd9aac6.min.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.rottentomatoes.com/m/yes_god_yes line 231 > injectedScript, line 2: TypeError: a is null
+JavaScript warning: https://www.rottentomatoes.com/rt-common.js?seed=AMA8tjSAAQAAVEq00qiJZxKGv6RHRzfm1v1BaClBnXFrfN5wAsIn-A-9rJTv&HgdtNmCjYr--z=q, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://z.moatads.com/nbcuyieldheader7581548001/moatheader.js, line 215: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.rottentomatoes.com/Z4fZWb13_BzGM2waCg/pi3cXXfV/GRsXSw/WC1qeQdz/BGU, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/jCkUzW4MJun-Op3iOFNjK-GGKJG_m8_dpwU-GZUxlWM.js line 1 > eval line 3854 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1650153621968	geckodriver	INFO	Listening on 127.0.0.1:49298
+1650153625009	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "49299" "-no-remote" "-profile" "C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofilenjssYc"
+*** You are running in headless mode.
+1650153625306	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofilenjssYc\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49299/devtools/browser/bf70c570-ffb7-429a-aa26-1625b5341c8a
+1650153626392	Marionette	INFO	Listening on port 49305
+1650153626552	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://assets.adobedtm.com/launch-EN549327edc13e414a9beb5d61bfd9aac6.min.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.rottentomatoes.com/m/yes_god_yes line 231 > injectedScript, line 2: TypeError: a is null
+JavaScript warning: https://www.rottentomatoes.com/rt-common.js?seed=AAC00TSAAQAAeP-9oOV7Rx0ZAuSbk9I9mmqQNq7OuXI5SLPj7kD2xb77Bb3-&HgdtNmCjYr--z=q, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://z.moatads.com/nbcuyieldheader7581548001/moatheader.js, line 215: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.rottentomatoes.com/ML7OOZmwSXheLVUwXuD2UHnHZeY/N3tiDVXrSi/dyIVCmg/MS/oVV3AdOQU, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/jCkUzW4MJun-Op3iOFNjK-GGKJG_m8_dpwU-GZUxlWM.js line 1 > eval line 1027 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1650153759731	geckodriver	INFO	Listening on 127.0.0.1:54091
+1650153762762	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "54092" "-no-remote" "-profile" "C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofile480ewo"
+*** You are running in headless mode.
+1650153763093	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofile480ewo\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54092/devtools/browser/7d91024b-e1ca-42fc-b753-f54948f53a5f
+1650153764162	Marionette	INFO	Listening on port 54097
+1650153764321	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://assets.adobedtm.com/launch-EN549327edc13e414a9beb5d61bfd9aac6.min.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.rottentomatoes.com/m/yes_god_yes line 231 > injectedScript, line 2: TypeError: a is null
+JavaScript warning: https://www.rottentomatoes.com/rt-common.js?seed=AAC00TSAAQAAeP-9oOV7Rx0ZAuSbk9I9mmqQNq7OuXI5SLPj7kD2xb77Bb3-&HgdtNmCjYr--z=q, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://z.moatads.com/nbcuyieldheader7581548001/moatheader.js, line 215: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.rottentomatoes.com/ML7OOZmwSXheLVUwXuD2UHnHZeY/N3tiDVXrSi/dyIVCmg/MS/oVV3AdOQU, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/jCkUzW4MJun-Op3iOFNjK-GGKJG_m8_dpwU-GZUxlWM.js line 1 > eval line 6487 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1650154076037	geckodriver	INFO	Listening on 127.0.0.1:54308
+1650154079071	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "54309" "-no-remote" "-profile" "C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofileeqBxOc"
+*** You are running in headless mode.
+1650154079377	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofileeqBxOc\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54309/devtools/browser/85d158ab-c612-4e24-967c-4acc26e73c84
+1650154080506	Marionette	INFO	Listening on port 54314
+1650154080622	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://assets.adobedtm.com/launch-EN549327edc13e414a9beb5d61bfd9aac6.min.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.rottentomatoes.com/m/yes_god_yes line 231 > injectedScript, line 2: TypeError: a is null
+JavaScript warning: https://www.rottentomatoes.com/rt-common.js?seed=AAC00TSAAQAAeP-9oOV7Rx0ZAuSbk9I9mmqQNq7OuXI5SLPj7kD2xb77Bb3-&HgdtNmCjYr--z=q, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://z.moatads.com/nbcuyieldheader7581548001/moatheader.js, line 215: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.rottentomatoes.com/ML7OOZmwSXheLVUwXuD2UHnHZeY/N3tiDVXrSi/dyIVCmg/MS/oVV3AdOQU, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/jCkUzW4MJun-Op3iOFNjK-GGKJG_m8_dpwU-GZUxlWM.js line 1 > eval line 1204 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1650154127739	geckodriver	INFO	Listening on 127.0.0.1:54480
+1650154130776	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "54481" "-no-remote" "-profile" "C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofile6VFpDl"
+*** You are running in headless mode.
+1650154131083	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofile6VFpDl\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54481/devtools/browser/d0a8a3e4-a7c9-4971-820d-38d8ee3bf0f5
+1650154132190	Marionette	INFO	Listening on port 54486
+1650154132320	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://assets.adobedtm.com/launch-EN549327edc13e414a9beb5d61bfd9aac6.min.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.rottentomatoes.com/m/yes_god_yes line 231 > injectedScript, line 2: TypeError: a is null
+JavaScript warning: https://www.rottentomatoes.com/rt-common.js?seed=AAC00TSAAQAAeP-9oOV7Rx0ZAuSbk9I9mmqQNq7OuXI5SLPj7kD2xb77Bb3-&HgdtNmCjYr--z=q, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://z.moatads.com/nbcuyieldheader7581548001/moatheader.js, line 215: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://z.moatads.com/px2/client.js, line 44: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://z.moatads.com/px2/client.js, line 56: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.rottentomatoes.com/ML7OOZmwSXheLVUwXuD2UHnHZeY/N3tiDVXrSi/dyIVCmg/MS/oVV3AdOQU, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://z.moatads.com/px2/client.js, line 44: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://z.moatads.com/px2/client.js, line 56: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/jCkUzW4MJun-Op3iOFNjK-GGKJG_m8_dpwU-GZUxlWM.js line 1 > eval line 1337 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1650154226646	geckodriver	INFO	Listening on 127.0.0.1:60283
+1650154229703	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "60287" "-no-remote" "-profile" "C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofilegD0xtI"
+*** You are running in headless mode.
+1650154230169	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofileShYMG0\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60287/devtools/browser/53127329-74c6-470e-83c7-014e91d016ba
+1650154232499	Marionette	INFO	Listening on port 60317
+1650154232898	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://assets.adobedtm.com/launch-EN549327edc13e414a9beb5d61bfd9aac6.min.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.rottentomatoes.com/m/the_invisible_man_2020 line 231 > injectedScript, line 2: TypeError: a is nuJavaJavaScript warning: https://www.rottentomatoes.com/rt-common.js?seed=AAC00TSAAQAAeP-9oOV7R1650154240296	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-portJavaScriJavaScript warning: https://z.moatads.com/nbcuyieldheader7581548001/moatheader.js, line 215: WEBGL_debug_renderer_info is depreca1650154241448	Marionette	INFO	Marionette enabled
+[GFXJavaScript warning: https://www.rottentomatoes.com/MJavaScript warninconsole.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kavvt\\AppDaJavaJavaScript warning: https://pagead2.googlesyndicJavaScript warning: https://pagead2.googlesyndication.com/bg/jCkUzW4MJun-Op3iOFNjK-GGKJG_m8_dpwU-GZUxlWM.js line 1 > eval line 5405 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated i
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1650156751273	Marionette	INFO	Stopped listening on port 60317
+[Parent 24360, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+[Parent 24360, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+cess_util_win.cc:167
+ging-port" "61437" "-no-remote" "-profile" "C:\\Users\\kavvt\\AppData\\LocalJavaScript error: resource:///modules/UrlbarController.jsm, out of memory: 0x0000000000000078 bytes requout of memory: 0x0000000000018810 bytes requested
+rker/checkouts/gecko/js/src/vm/JSContext.cpp:1261
+#01: GIFFT_TimingDistributionCancel[C:\Program Files\Mozi1650154257311	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+zilla Firefox\xul.dll +0x458b8c8]
+#03: GIFFT_TimingDistributionStopAndAccumulate[C:\Program Files\Mozilla Firefox\xul.dll +0x1cb198b]
+#04: GIFFT_TimingDistributionStopAndAccumulate[C:\Program Files\Mozilla Firefox\xul.dll +0x1c8bb62]
+#05: GIFFT_TimingDistributionStopAndAccumulate[C:\Program Files\Mozilla Firefox\xul.dll +0x133da9b]
+#06: XRE_GetBootstrap[C:\Program Files\Mozilla Firefox\xul.dll +0x50d58]
+#07: GIFFT_TimingDistributionStopAndAccumulate[C:\Program Files\Mozilla Firefox\xul.dll +0x1c341fe]
+#08: GIFFT_TimingDistributionStopAndAccumulate[C:\Program Files\Mozilla Firefox\xul.dll +0x1c5ba80]
+#09: GIFFT_TimingDistributionStopAndAccumulate[C:\Program Files\Mozilla Firefox\xul.dll +0x18280fc]
+#10: XRE_GetBootstrap[C:\Program Files\Mozilla Firefox\xul.dll +0x1724c9]
+#11: XRE_GetBootstrap[C:\Program Files\Mozilla Firefox\xul.dll +0x31f8dd]
+#12: XRE_GetBootstrap[C:\Program Files\Mozilla Firefox\xul.dll +0x32587d]
+#13: workerlz4_compress[C:\Program Files\Mozilla Firefox\xul.dll +0xc66dbc]
+#14: GIFFT_TimingDistributionStopAndAccumulate[C:\Program Files\Mozilla Firefox\xul.dll +0x1723ee7]
+#15: ??? (???:???)
+1650154257468	geckodriver	INFO	Listening on 127.0.0.1:61531
+1650154260495	mozrunner::runner	INFO	Running command: "C:\\P1650154261296	mozrunner::runner	INFO	Running command: "C:\\P1650154261565	mozrunner::runner	INFO	Running command: "C:\\P1650154261607	mozrunner::runner	INFO	Running command: "C:\\P1650154261964	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "61557" "-no-remote" "-profile" "C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofileKWR8kJ"
+*** You are running in headless mode.
+1650154262397	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofileKWR8kJ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:61557/devtools/browser/b7d366e8-b0a9-4f56-86d1-c52a479e80c1
+1650154263847	Marionette	INFO	Listening on port 61599
+1650154264025	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+/XPIDatabase.jsm, line 225: uncaught exception: out of memory
+1650154262811	geckodriver	INFO	Listening on 127.0.0.1:61603
+1650154265852	mozrunner::runner	INFO	Running command: "C:\\P1650154266580	mozrunner::runner	INFO	Running command: "C:\\P1650154266828	mozrunner::runner	INFO	Running command: "C:\\P1650154266846	mozrunner::runner	INFO	Running command: "C:\\P1650154267250	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "61638" "-no-remote" "-profile" "C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofilepY8jyK"
+*** You are running in headless mode.
+1650154267575	Marionette	INFO	Marionette enabled
+out of memory: 0x0000000000000060 bytes requested
+out of memory: 0x00000000000116D8 bytes requested
+1650154268085	geckodriver	INFO	Listening on 127.0.0.1:61690
+1650154271142	mozrunner::runner	INFO	Running command: "C:\\P1650154271851	mozrunner::runner	INFO	Running command: "C:\\P1650154272127	mozrunner::runner	INFO	Running command: "C:\\P1650154272519	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-1650154274263	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "61716" "-no-remote" "-profile" "C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofileiEy7k5"
+*** You are running in headless mode.
+1650154274711	Marionette	INFO	Marionette enabled
+out of memory: 0x0000000000000108 bytes requested
+0
+1650154276425	mozrunner::runner	INFO	Running command: "C:\\P1650154277075	mozrunner::runner	INFO	Running command: "C:\\P1650154277436	mozrunner::runner	INFO	Running command: "C:\\P1650154277800	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-1650154279556	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "61772" "-no-remote" "-profile" "C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofileCI8y3D"
+*** You are running in headless mode.
+1650154279903	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofileCI8y3D\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:61772/devtools/browser/d549b4e6-d8f9-4367-a015-91be68d1a5f9
+1650154281188	Marionette	INFO	Listening on port 61852
+1650154281608	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+efox\xul.dll +0x1cb37ba]
+#05: GIFFT_TimingDistributionStopAndAccumulate[C:\Program Files\Mozilla Firefox\xul.dll +0x1c8b6ee]
+#06: GIFFT_TimingDistributionStopAndAccumulate[C:\Program Files\Mozilla Firefox\xul.dll +0x133da9b]
+#07: XRE_GetBootstrap[C:\Program Files\Mozilla Firefox\xul.dll +0x50d58]
+#08: workerlz4_compress[C:\Program Files\Mozilla Firefox\xul.dll +0x82770b]
+#09: GIFFT_TimingDistributionStopAndAccumulate[C:\Program Files\Mozilla Firefox\xul.dll +0x19ace26]
+#10: GIFFT_TimingDistributionStopAndAccumulate[C:\Program Files\Mozilla Firefox\xul.dll +0x16c2430]
+#11: GIFFT_TimingDistributionStopAndAccumulate[C:\Program Files\Mozilla Firefox\xul.dll +0x19d9885]
+#12: workerlz4_compress[C:\Program Files\Mozilla Firefox\xul.dll +0x9d84bf]
+#13: XRE_GetBootstrap[C:\Program Files\Mozilla Firefox\xul.dll +0x209ce]
+#14: XRE_GetBootstrap[C:\Program Files\Mozilla Firefox\xul.dll +0x185058]
+#15: XRE_GetBootstrap[C:\Program Files\Mozilla Firefox\xul.dll +0x183f4f]
+#16: GIFFT_TimingDistributionStopAndAccumulate[C:\Program Files\Mozilla Firefox\xul.dll +0x127891b]
+#17: workerlz4_compress[C:\Program Files\Mozilla Firefox\xul.dll +0x9d84bf]
+#18: XRE_GetBootstrap[C:\Program Files\Mozilla Firefox\xul.dll +0x209ce]
+#19: GIFFT_TimingDistributionStopAndAccumulate[C:\Program Files\Mozilla Firefox\xul.dll +0x1278376]
+#20: GetNtLoaderAPI[C:\Program Files\Mozilla Firefox\firefox.exe +0x9d59]
+#21: IsSandboxedProcess[C:\Program Files\Mozilla Firefox\firefox.exe +0x1c878]
+#22: ???[C:\WINDOWS\System32\KERNEL32.DLL +0x17034]
+#23: ???[C:\WINDOWS\SYSTEM32\ntdll.dll +0x52651]
+1650154278693	geckodriver	INFO	Listening on 127.0.0.1:61826
+1650154281749	mozrunner::runner	INFO	Running command: "C:\\P1650154282371	mozrunner::runner	INFO	Running command: "C:\\P1650154282681	mozrunner::runner	INFO	Running command: "C:\\P1650154283066	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "61862" "-no-remote" "-profile" "C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofile1GoH7I"
+*** You are running in headless mode.
+1650154283428	Marionette	INFO	Marionette enabled
+out of memory: 0x0000000000100000 bytes requested
+A80 bytes requested
+1650154283989	geckodriver	INFO	Listening on 127.0.0.1:61935
+1650154284507	geckodriver	INFO	Listening on 127.0.0.1:61940
+1650154542534	geckodriver	INFO	Listening on 127.0.0.1:52114
+1650154545602	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "52118" "-no-remote" "-profile" "C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofilemIb2wQ"
+*** You are running in headless mode.
+1650154546019	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofileh6jMXK\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52111/devtools/browser/ce82ee97-4c24-4476-a6b2-e94791502ab6
+1650154548273	Marionette	INFO	Listening on port 52141
+1650154548768	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1650156734481	Marionette	INFO	Stopped listening on port 52143
+[Parent 29844, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+unner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "5231[GFX1-]: RenderCompositorSWGL failed mapping default framebu[GFX1-]: Rendconsole.warn: SearchSettings: "get: No settings[GFX1-]: RenderCompositorSWGL failed mapping default framebu[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofilegC1s6w\\search.json.mozlz4", (void 0)))
+1650154553884	geckodriver	INFO	Listening on 127.0.0.1:52459
+1650154556910	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "52465" "-no-remote" "-profile" "C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofilePVl00d"
+*** You are running in headless mode.
+1650154557323	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofileQ6dv9E\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52463/devtools/browser/6e00de15-f742-4f17-9810-6d733245d3ea
+1650154559822	Marionette	INFO	Listening on port 52490
+1650154560090	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1650154559819	geckodriver	INFO	Listening on 127.0.0.1:52620
+1650154562867	mozrunner::runner	INFO	Running command: "C:\\P1650154563071	mozrunner::runner	INFO	Running command: "C:\\P1650154563294	mozrunner::runner	INFO	Running command: "C:\\P1650154563716	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "5267[GFX1-]: RenderCompositorSWGL failed mapping default framebu[GFX1-]: RenderCompositorSWGL failed mapping default framebu[GFX1-]: RenderCompositorSWGL failed mapping default framebu[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kavvt\\AppData\\Local\\TeDevTools listening on ws://localhost:52662/devtools/browser/DevTools listening on ws://localhost:52678/devtools/browser/3e555849-2e6e-484b-9f99-835687e0e202
+1650154566673	Marionette	INFO	Listening on port 52746
+1650154566881	RemoteAgent	WA1650154568877	mozrunner::runner	INFO	Running command: "C:\\P1650154569066	mozrunner::runner	INFO	Running command: "C:\\P1650154569254	mozrunner::runner	INFO	Running command: "C:\\P1650154569701	mozrunner::runner	INFO	Running command: "C:\\P1650154570088	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "5292[GFX1-]: RenderCompositorSWGL failed mapping default framebu[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+ new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofileNkUZsT\\search.json.mozlz4", (void 0)))
+1650154570755	geckodriver	INFO	Listening on 127.0.0.1:53014
+1650154573171	geckodriver	INFO	Listening on 127.0.0.1:53037
+1650154576431	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "53040" "-no-remote" "-profile" "C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofiledGxUVr"
+*** You are running in headless mode.
+1650154576917	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofileQkoDfZ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53038/devtools/browser/ab7eb40b-93bd-47e0-a90d-339d2d16a2ed
+1650154579260	Marionette	INFO	Listening on port 53067
+1650154579624	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1650156737685	Marionette	INFO	Stopped listening on port 53062
+[Parent 15008, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+ors will be ignored for this session
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1650156719271	Marionette	INFO	Stopped listening on port 53061
+[Parent 12712, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+unner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "5323[GFX1-]: RenderCompositorSWGL failed mapping default framebu[GFX1-]: RenderCompositorSWGL failed mapping default framebu[GFX1-]: Rendconsole.warn: SearchSettings: "get: No settings[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: NoDevTools listening on ws://localhost:53210/devtools/browser/DevTools listening on ws://localhost:53222/devtools/browser/c1bdb8dd-4ab1-4ca7-9556-032700f38add
+1650154585976	MarionetDevTools listening on ws://localh1650154586492	RemoteAgent	WAconsole.error: services.settings: 
+  Message: QuotaExceededError: IndexedDB: main/language-dictionaries importChanges() IndexedDB:  importChanges() in main/language-dictionaries The current transaction exceeded its quota limitations.
+console.error: services.settings: 
+  Message: InvalidStateError: IndexedDB: main/public-suffix-list importChanges() IndexedDB: collections, timestamps, records importChanges() in main/public-suffix-list A mutation operation was attempted on a database that did not allow mutations.
+  Stack:
+    importChanges/<@resource://services-settings/Database.jsm:116:27
+executeIDB/promise<@resource://services-settings/IDBHelpers.jsm:134:16
+executeIDB@resource://services-settings/IDBHelpers.jsm:98:17
+executeIDB@resource://services-settings/Database.jsm:376:45
+
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: services.settings: 
+  Message: QuotaExceededError: IndexedDB: main/search-default-override-allowlist importChanges() IndexedDB:  importChanges() in main/search-default-override-allowlist The current transaction exceeded its quota limitations.
+console.error: services.settings: 
+  Message: InvalidStateError: IndexedDB: main/search-config importChanges() IndexedDB: collections, timestamps, records importChanges() in main/search-config A mutation operation was attempted on a database that did not allow mutations.
+  Stack:
+    importChanges/<@resource://services-settings/Database.jsm:116:27
+executeIDB/promise<@resource://services-settings/IDBHelpers.jsm:134:16
+executeIDB@resource://services-settings/IDBHelpers.jsm:98:17
+executeIDB@resource://services-settings/Database.jsm:376:45
+
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: services.settings: 
+  Message: QuotaExceededError: IndexedDB: main/devtools-compatibility-browsers importChanges() IndexedDB:  importChanges() in main/devtools-compatibility-browsers The current transaction exceeded its quota limitations.
+console.error: services.settings: 
+  Message: InvalidStateError: IndexedDB: main/hijack-blocklists importChanges() IndexedDB: collections, timestamps, records importChanges() in main/hijack-blocklists A mutation operation was attempted on a database that did not allow mutations.
+  Stack:
+    importChanges/<@resource://services-settings/Database.jsm:116:27
+executeIDB/promise<@resource://services-settings/IDBHelpers.jsm:134:16
+executeIDB@resource://services-settings/IDBHelpers.jsm:98:17
+executeIDB@resource://services-settings/Database.jsm:376:45
+
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: services.settings: 
+  Message: QuotaExceededError: IndexedDB: main/url-classifier-skip-urls importChanges() IndexedDB:  importChanges() in main/url-classifier-skip-urls The current transaction exceeded its quota limitations.
+console.error: services.settings: 
+  Message: InvalidStateError: IndexedDB: main/pioneer-study-addons-v1 importChanges() IndexedDB: collections, timestamps, records importChanges() in main/pioneer-study-addons-v1 A mutation operation was attempted on a database that did not allow mutatioconsole.error: services.settings: 
+  Message: AbortError: IndexedDB: blocklists/gfx getLastModified() IndexedDB:  execute(console.error: services.settings: 
+  Message: AbortError: IndexedDB: blocklisconsole.error: services.settings: 
+  Message: AbortError: IndexedDB: blocklists/addons-bloomfilters getLastModified() Indeconsole.error: services.settings: 
+  Message: AbortError: IndexedDB: blocklists/addons-bloomf
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1650156702905	Marionette	INFO	Stopped listening on port 54150
+[Parent 23960, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+ not allow mutations.
+  Stack:
+    importChanges/<@resource://services-settings/Database.jsm:116:27
+executeIDB/promise<@resource://services-settings/IDBHelpers.jsm:134:16
+executeIDB@resource://services-settings/IDBHelpers.jsm:98:17
+executeIDB@resource://services-settings/Database.jsm:376:45
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1650156704851	Marionette	INFO	Stopped listening on port 53298
+[Parent 32168, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+ no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file aconsole.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("CouDevTools listening on ws://localhost:54557/devtools/browser/0[Parent 35908, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+ckouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+rent 22344, IPC I/O Parent] WARNING: file /builds/worker/[Parent 16340, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+0154663758	mozrunner::runner	INFO	Running command1650154666465	Marionette	INFO	Marionette enabled
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT",1650154682311	Marionette	INFO	Marionette enabled
+-]: Render1650154682320	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofileX61XoW\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54827/devtools/browser/5110e5c5-b357-4129-a0c9-a70fdd2831e5
+1650154687084	Marionette	INFO	Listening on port 54876
+console.error: "Could not write session state file " (new Er[Parent 34632, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+console.error: services.settings: 
+  Message: AbortError: IndexedDB: blocklists/gfx getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.
+console.error: services.settings: 
+  Message: AbortError: IndexedDB: blocklists/addons-bloomfilters getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1650156685423	Marionette	INFO	Stopped listening on port 54881
+[Parent 34632, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+ [Parent][PContentParent] Error: Send(msgname=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1650156683239	Marionette	INFO	Stopped listening on port 54876
+[Parent 31376, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+3: Error: Error(s) encoun[Par[Parent 25932, IPC I/O Parent] WARNING: file /builds/worker/[Parent 25312, IPC I/O Parent] WARNING: file /builds/workerconsole.error: "Could not write session state file " (new Error(JavaScript error: , line 0: uncaught exception: Object
+avvt\\AppData\\Local\\Temp\\rust_mozproA content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1650156681930	Marionette	INFO	Stopped listening on port 55105
+[Parent 17424, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+arionette	INFO	Marionette enabled
+JavaScript error: , line 0: QuotaExceededError: The current transaction exceeded its quota limitations.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFouJavaScript error: resource://gre/modules/Sqlite.jsm, line 963: Error: Error(s) encountered during statement execution: database or disk is full
+[Parent 8908, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+console.error: "Could not write session state file " (new Error("Could not write chunk (size = 937) to file C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofileT0Cwdj\\sessionstore-backups\\recovery.jsonlz4.tmp. The file may be corrupt.", (void 0), 106)) "DOMException@resource://gre/modules/PromiseWorker.jsm:106:18\npostMessage@resource://gre/modules/PromiseWorker.jsm:342:55\n"
+JavaScript error: , line 0: uncaught exception: Object
+Could not open connection to C:\Users\kavvt\AppData\Local\Temp\rust_mozprofile8jgGzd\protections.sqlite: 2152857621
+[Parent 15800, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+console.error: "Could not write session state file " (new Error("Could not write chunk (size = 952) to file C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofile8jgGzd\\sessionstore-backups\\recovery.jsonlz4.tmp. The file may be corrupt.", (void 0), 106)) "DOMException@resource://gre/modules/PromiseWorker.jsm:106:18\npostMessage@resource://gre/modules/PromiseWorker.jsm:342:55\n"
+JavaScript error: , line 0: uncaught exception: Object
+b52-4157-922d-8425ac7ef2bc
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1999: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1999: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1999: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000fconsole.error: "Could not write session state file " (new Error("Could not write chunk (size = 820) to file C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofileTWOFpR\\sessionstore-backups\\recovery.jsonlz4.tmp. The file may be corrupt.", (void 0), 106)) "DOMException@resource://gre/modules/PromiseWorker.jsm:106:18\npostMessage@resource://gre/modules/PromiseWorker.jsm:342:55\n"
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 963: Error: Error(s) encountered during statement execution: database or disk is full
+[Parent 25556, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+console.error: "Could not write session state file " (new Error("Could not write chunk (size = 943) to file C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofileTWOFpR\\sessionstore-backups\\recovery.jsonlz4.tmp. The file may be corrupt.", (void 0), 106)) "DOMException@resource://gre/modules/PromiseWorker.jsm:106:18\npostMessage@resource://gre/modules/PromiseWorker.jsm:342:55\n"
+JavaScript error: , line 0: uncaught exception: Object
+"DOMException@resource://gre/modules/PromiseWorker.jsm:106:18\npostMessage@resource://gre/modules/PromiseWorker.jsm:16501547032[Parent 23008, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 963: Error: Error(s) encountered during statement execution: database or disk is full
+console.error: "Could not write session state file " (new Error("Could not write chunk (size = 934) to file C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofile1XJTQr\\sessionstore-backups\\recovery.jsonlz4.tmp. The file may be corrupt.", (void 0), 106)) "DOMException@resource://gre/modules/PromiseWorker.jsm:106:18\npostMessage@resource://gre/modules/PromiseWorker.jsm:342:55\n"
+JavaScript error: , line 0: uncaught exception: Object
+kups\\recovery.jsonlz4.tmp. The file may be corrupt.", (void 0), 106)) "DOMException@resource://gre/modules/PromiseWorker.jsm:106:18\npostMessage@resource://gre/modules/PromiseWorker.jsm:342:55\n"
+JavaScript error: , line 0: uncaught exception: Object
+000000000000068 bytes requested
+ng default framebuffer, no dt
+out of memory: 0x00000000000002A0 bytes requested
+rror(s) encountered during statement execution: database or disk is full
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 963: Error: Error(s) encountered during statement execution: database or disk is full
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1999: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1999: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1999: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+console.error: PushService: 
+  stateChangeProcessEnqueue: Error transitioning state
+  QuotaExceededError
+JavaScript error: , line 0: QuotaExceededError: The current transaction exceeded its quota limitations.
+DevTools listening on ws://localhost:55553/devtools/browser/e636a768-96de-4514-a1d6-ca9fc56a35fc
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1999: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1999: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1999: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1999: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1999: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+1650154705146	Marionette	INFO	Listening on port 55589
+1650154705325	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 963: Error: Error(s) encountered during statement execution: database or disk is full
+[Parent 28124, IPC I/O Parent] WARNING: file /builds/worker/1650154708523	mozrunner::runner	INFO	Running command: "C:\\P1650154709036	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "55649" "-no-remote" "-profile" "C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofileK66EgN"
+*** You are running in headleJavaScript1650154709387	M1650154710913	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "55660" "-no-remote" "-profile" "C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofile6PvOXR"
+*** You are running in headless mode.
+1650154711300	Marionette	INFO	MarJavaScript error: resource://gre/modules/PromiseWorker.jsm, line 106: Error: Could not get children of file(C:\Users\kavvt\AppData\Local\Temp\rust_mozprofileufMzkF\thumbnails) because it does not exist
+warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kavvt\\AppData\\Local\\T1650154712149	Marionette	INFO	Marionette enabled
+JavaScript error: , line 0: QuotaExceededError: The current JavaScript error: , line 0: QuotaExceededErro[GFX1-]: RenderCompositorSWGL failed mapping default framebu[GFX1-]: Rendconsole.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofileUrF3jj\\search.json.mozlz4", (void 0)))
+JavaScript error: , line 0: QuotaExceededError: The current JavaScript error: , line 0: QuotaExceededErroJavaScript error: resource://gre/modules/Sqlite.jsm, line 11JavaScript error: resource://gre/modules/Sqlite.jsm, line 1184: NS_ERROR_FILE_ACCESS_DENIED: Could not open connection to C:\Users\kavvt\AppData\Local\TJavaScript error: resource://gre/modules/Sqlite.jsm, line 11JavaScript error: resource://gre/modules/Sqlite.jsm, line 1184: NS_ERROR_FILE_ACCESS_DENIED: Could not open connection to C:\Users\kavvt\AppData\Local\Tconsole.error: PushService: 
+  stateChangeProcessEnqueue: Econsole.error: PushService: 
+  stateChangJavaScript error: resource://gre/modules/PlacesUtils.jsm, liJavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1999: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1999: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1999: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff[2022-04-17T00:18:33Z ERROR glean] Failed to initialize Glea[2022-04-17T00:18:33Z ERROR glean] Failed to initialize Glean: An I/O error occurred: There is not enough space on the disk. (os error 112)
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+console.error: SearchSettings: "_write: Could not write to settings file:" (new NotReadableError("Could not open the file at C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofilevOO65p\\search.json.mozlz4.tmp for writing", (void 0)))
+DevTools listening on ws://localhost:55669/devtools/browser/d159a9ec-9bdd-40e3-8d88-2344cd568062
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofilevOO65p\\search.json.mozlz4", (void 0)))
+1650154713880	CDP	WARN	Failed to create C:\Users\kavvt\AppData\Local\Temp\rust_mozprofilevOO65p\DevToolsActivePort (Could not open the file at C:\Users\kavvt\AppData\Local\Temp\rust_mozprofilevOO65p\DevToolsActivePort for writing)
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1999: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1999: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFoJavaScript error: resource://gre/modules/Sqlite.jsm, line 963: Error: Error(s) encountered during statement execution: database or disk is full
+console.error: "Could not write session state file " (new Error("Could not write chunk (size = 937) to file C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofileK66EgN\\sessionstore-backups\\recovery.jsonlz4.tmp. The file may be corrupt.", (void 0), 106)) "DOMException@resource://gre/modules/PromiseWorker.jsm:106:18\npostMessage@resource://gre/modules/PromiseWorker.jsm:342:55\n"
+4.tmp. The file may be corrupt.", (void 0), 106)) "DOMException@resource://gre/modules/PromiseWorker.jsm:106:18\npostMessage@resource://gre/modules/PromiseWorker.jsm:342:55\n"
+ata\Local\Temp\rust_mozprofilevOO65p\MarionetteActivePort (Could not open the file at C:\Users\kavvt\AppData\Local\Temp\rust_mozprofilevOO65p\MarionetteActivePort for writing)
+1650154714349	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1184: NS_ERROR_FILE_ACCESS_DENIED: Could not open connection to C:\Users\kavvt\AppData\Local\Temp\rust_mozprofilevOO65p\content-prefs.sqlite: 2152857621
+console.error: SearchSconsole.error: "Could not write session state file " (new Error("Could not create directory at C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofile6PvOXR\\sessionstore-backups", (void 01650154716888	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--reJavaScript error: resource://gre/modules/Sqlite.jsm, line 1184: NS_ERROR_FILE_ACCESS_DENIED: Could not open connection to C:\Users\kavvt\AppData\Local\Temp\rust_mozprofile6PvOXR\protections.sqlite: 2152857621
+console.error: "Could not write session state file " (new Error("Could not open the file at C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofile6PvOXR\\sessionstore-backups\\recovery.jsonlz4.tmp for writing", (void 0), 106)) "DOMException@resource://gconsole.error: "Could not write session state file " (new Erconsole.error: "Could not write session state file " (new Error("Could not write chunk (size = 945) to file C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofilevOO65p\\sessionstore-backups\\recovery.jsonlz4.tmp. The file may be corrupt.", (void 0), 106)) "DOMException@resource://gre/modules/PromiseWorker.jsm:106:18\npostMessage@resource://gre/modules/PromiseWorker.jsm:342:55\n"
+age] error getting security_state path: There is not enough space on the disk. (os error 112)
+console.error: Region.jsm: "Error fetching region" (new Type1650154724252	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "55868" "-no-remote" "-profile" "C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofilejbIbDu"
+*** You are running in headless mode.
+JavaScript error: resource://gre/modules/addon1650154727583	geckodriver	INFO	Listening on 127.0.0.1:55902
+ate directory at C:\Users\kavvt\AppData\Local\Temp\rust_mozprofilejbIbDu\startupCache
+1650154725342	Marionette	INFO	Marionette enabled
+JavaScript error: , line 0: NotReadableError: Could not open the file at C:\Users\kavvt\AppData\Local\Temp\rust_mozprofilejbIbDu\sessionCheckpoints.json.tmp for writing
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+JavaScript error: , line 0: NotReadableError: Could not open the file at C:\Users\kavvt\AppData\Local\Temp\rust_mozprofilejbIbDu\times.json for writing
+[2022-04-17T00:18:45Z ERROR cert_storage] error getting security_state path: There is not enough space on the disk. (os error 112)
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofilejbIbDu\\search.json.mozlz4", (void 0)))
+JavaScript error: , line 0: NotReadableError: Could not open the file at C:\Users\kavvt\AppData\Local\Temp\rust_mozprofilejbIbDu\sessionCheckpoints.json.tmp for writing
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1184: NS_ERROR_FILE_ACCESS_DENIED: Could not open connection to C:\Users\kavvt\AppData\Local\Temp\rust_mozprofilejbIbDu\content-prefs.sqlite: 2152857621
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1184: NS_ERROR_FILE_ACCESS_DENIED: Could not open connection to C:\Users\kavvt\AppData\Local\Temp\rust_mozprofilejbIbDu\content-prefs.sqlite: 2152857621
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 106: Error: Could not create directory at C:\Users\kavvt\AppData\Local\Temp\rust_mozprofilejbIbDu\thumbnails
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1999: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+console.error: PushService: 
+  stateChangeProcessEnqueue: Error transitioning state
+  UnknownError
+[2022-04-17T00:18:48Z ERROR glean] Failed to initialize Glean: An I/O error occurred: There is not enough space on the disk. (os error 112)
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+DevTools listening on ws://localhost:55868/devtools/browser/fae4dcbc-7544-4fd2-933c-cebd3dc3f41e
+1650154728495	CDP	WARN	Failed to create C:\Users\kavvt\AppData\Local\Temp\rust_mozprofilejbIbDu\DevToolsActivePort (Could not open the file at C:\Users\kavvt\AppData\Local\Temp\rust_mozprofilejbIbDu\DevToolsActivePort for writing)
+1650154728538	Marionette	INFO	Listening on port 55898
+1650154728542	Marionette	WARN	Failed to create C:\Users\kavvt\AppData\Local\Temp\rust_mozprofilejbIbDu\MarionetteActivePort (Could not open the file at C:\Users\kavvt\AppData\Local\Temp\rust_mozprofilejbIbDu\MarionetteActivePort for writing)
+1650154728586	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1184: NS_ERROR_FILE_ACCESS_DENIED: Could not open connection to C:\Users\kavvt\AppData\Local\Temp\rust_mozprofilejbIbDu\content-prefs.sqlite: 2152857621
+console.error: SearchSettings: "_write: Could not write to settings file:" (new NotReadableError("Could not open the file at C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofilejbIbDu\\search.json.mozlz4.tmp for writing", (void 0)))
+JavaScript error: resource://gre/modules/NewTabUtils.jsm, line 1379: TypeError: conn is undefined
+console.error: "Could not write session state file " (new Error("Could not create directory at C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofilejbIbDu\\sessionstore-backups", (void 0), 106)) "DOMException@resource://gre/modules/PromiseWorker.jsm:106:18\npostMessage@resource://gre/modules/PromiseWorker.jsm:342:55\n"
+console.error: "Could not write session state file " (new Error("Could not open the file at C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofilejbIbDu\\sessionstore-backups\\recovery.jsonlz4.tmp for writing", (void 0), 106)) "DOMException@resource://gre/modules/PromiseWorker.jsm:106:18\npostMessage@resource://gre/modules/PromiseWorker.jsm:342:55\n"
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 106: Error: Could not get children of file(C:\Users\kavvt\AppData\Local\Temp\rust_mozprofilejbIbDu\thumbnails) because it does not exist
+unner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "56082" "-no-remote" "-profile" "C:\*** You are running in headless mode.
+JavaScript error: resource://gre/modules/addons/XPIProvider.1650154754159	Marionette	INFO	Marionette enabled
+JavaScript error: , line 0: QuotaExceededError: The current transaction exceeded its quota limitations.
+out of memory: 0x00000000000JavaScript error: , line 0: QuotaExceededError: The current transaction exceeded its quota limitations.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofile4ZU5R0\\search.json.mozlz4", (void 0)))
+[Parent 21656, IPC I/O Parent] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:556
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_NotifyProcessPriorityChanged) Channel error: cannot send/recv
+
+out of memory: 0x0000000000000080 bytes requested
+Exiting due to channel error.
+Mozilla Firefox\firefox.exe +0x1c878]
+#11: BaseThreadInitThunk[C:\WINDOWS\System32\KERNEL32.DLL +0x17034]
+#12: RtlUserThreadStart[C:\WINDOWS\SYSTEM32\ntdll.dll +0x52651]
+1650154760596	geckodriver	INFO	Listening on 127.0.0.1:56160
+1650154763639	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "56161" "-no-remote" "-profile" "C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofileqzmb1y"
+*** You are running in headless mode.
+1650154763983	Marionette	INFO	Marionette enabled
+out of memory: 0x0000000000100000 bytes requested
+Hit MOZ_CRASH([unhandlable oom] Failed to allocate slots while tenuring.) at /builds/worker/checkouts/gecko/js/src/vm/JSContext.cpp:1261
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: Object
+Hit MOZ_CRASH([unhandlable oom] Failed to allocate slots while tenuring.) at /builds/worker/checkouts/gecko/js/src/vm/JSContext.cpp:1261
+### ERROR: SymInitialize: The parameter is incorrect.
+#01: ??? (???:???)
+### ERROR: SymInitialize: The parameter is incorrect.
+#02: ??? (???:???)
+### ERROR: SymInitialize: The parameter is incorrect.
+#03: ??? (???:???)
+### ERROR: SymInitialize: The parameter is incorrect.
+#04: ??? (???:???)
+### ERROR: SymInitialize: The parameter is incorrect.
+#05: ??? (???:???)
+### ERROR: SymInitialize: The parameter is incorrect.
+#06: ??? (???:???)
+### ERROR: SymInitialize: The parameter is incorrect.
+#07: ??? (???:???)
+### ERROR: SymInitialize: The parameter is incorrect.
+#08: ??? (???:???)
+### ERROR: SymInitialize: The parameter is incorrect.
+#09: ??? (???:???)
+### ERROR: SymInitialize: The parameter is incorrect.
+#10: ??? (???:???)
+### ERROR: SymInitialize: The parameter is incorrect.
+#11: ??? (???:???)
+### ERROR: SymInitialize: The parameter is incorrect.
+#12: ??? (???:???)
+### ERROR: SymInitialize: The parameter is incorrect.
+#13: ??? (???:???)
+### ERROR: SymInitialize: The parameter is incorrect.
+#14: ??? (???:???)
+### ERROR: SymInitialize: The parameter is incorrect.
+#15: ??? (???:???)
+### ERROR: SymInitialize: The parameter is incorrect.
+#16: ??? (???:???)
+### ERROR: SymInitialize: The parameter is incorrect.
+#17: ??? (???:???)
+### ERROR: SymInitialize: The parameter is incorrect.
+#18: ??? (???:???)
+### ERROR: SymInitialize: The parameter is incorrect.
+#19: ??? (???:???)
+### ERROR: SymInitialize: The parameter is incorrect.
+#20: ??? (???:???)
+### ERROR:JavaScript error: resource:///modules/WindowsJumpLists.jsm, line 419: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavHistoryService.asyncExecuteLegacyQuery]
+JavaScript error: resource:///modules/WindowsJumpLists.jsm, line 419: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavHistoryService.asyncExecuteLegacyQuery]
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1999: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+JavaScript error: resource:///modules/WindowsJumpLists.jsm, line 419: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavHistoryService.asyncExecuteLegacyQuery]
+console.error: services.settings: 
+  Message: QuotaExceededError: IndexedDB: blocklists/gfx getLastModified() IndexedDB:   The current transaction exceeded its quota limitations.
+console.error: services.settings: 
+  Message: QuotaExceededError: IndexedDB: blocklists/addons-bloomfilters getLastModified() IndexedDB:   The current transaction exceeded its quota limitations.
+JavaScript error: resource:///modules/WindowsJumpLists.jsm, line 419: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavHistoryService.asyncExecuteLegacyQuery]
+JavaScript error: resource:///modules/WindowsJumpLists.jsm, line 419: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavHistoryService.asyncExecuteLegacyQuery]
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1999: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+JavaScript error: resource:///modules/WindowsJumpLists.jsm, line 419: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavHistoryService.asyncExecuteLegacyQuery]
+JavaScript error: resource:///modules/WindowsJumpLists.jsm, line 419: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavHistoryService.asyncExecuteLegacyQuery]
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1999: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+JavaScript error: resource:///modules/WindowsJumpLists.jsm, line 419: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavHistoryService.asyncExecuteLegacyQuery]
+JavaScript error: resource:///modules/WindowsJumpLists.jsm, line 419: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavHistoryService.asyncExecuteLegacyQuery]
+JavaScript error: resource:///modules/WindowsJumpLists.jsm, line 419: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavHistoryService.asyncExecuteLegacyQuery]
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1999: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+JavaScript error: resource:///modules/WindowsJumpLists.jsm, line 419: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavHistoryService.asyncExecuteLegacyQuery]
+JavaScript error: resource:///modules/WindowsJumpLists.jsm, line 419: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavHistoryService.asyncExecuteLegacyQuery]
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1999: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+JavaScript error: resource:///modules/WindowsJumpLists.jsm, line 419: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavHistoryService.asyncExecuteLegacyQuery]
+JavaScript error: resource:///modules/WindowsJumpLists.jsm, line 419: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavHistoryService.asyncExecuteLegacyQuery]
+JavaScript error: resource:///modules/WindowsJumpLists.jsm, line 419: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavHistoryService.asyncExecuteLegacyQuery]
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1999: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  SessionStore: flushing all windows
+          Phase: quit-application-granted
+          State: {"total":-1,"current":-1}
+WARNING: TypeError: mm is null
+WARNING: flush@resource:///modules/sessionstore/TabStateFlusher.jsm:131:7
+flushWindow@resource:///modules/sessionstore/TabStateFlusher.jsm:173:28
+flushWindow@resource:///modules/sessionstore/TabStateFlusher.jsm:42:36
+flushAllWindowsAsync@resource:///modules/sessionstore/SessionStore.jsm:2195:50
+ssi_onQuitApplicationGranted/<@resource:///modules/sessionstore/SessionStore.jsm:2113:32
+trigger@resource://gre/modules/AsyncShutdown.jsm:747:23
+_wait@resource://gre/modules/AsyncShutdown.jsm:899:15
+wait@resource://gre/modules/AsyncShutdown.jsm:880:34
+observe@resource://gre/modules/AsyncShutdown.jsm:557:10
+observe@resource:///modules/ContentCrashHandlers.jsm:177:28
+
+1650156660831	Marionette	INFO	Stopped listening on port 56095
+[Parent 30168, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+JavaScript error: resource:///modules/sessionstore/TabStateFlusher.jsm, line 131: TypeError: mm is null
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
