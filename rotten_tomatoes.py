@@ -25,22 +25,20 @@ def getMovie(link):
 
     scoreboard = soup.select_one('score-board.scoreboard')
     title = scoreboard.select_one('.scoreboard__title').text
-    # print(title)
     
     info = scoreboard.select_one('.scoreboard__info').text
     split = info.split(', ')
     # checks if info is missing values. I could use regex to figure out what values are there, but it might not be worth the effort.
     if len(split) < 3:
-        genres = None
+        genres = np.nan
         runtime = np.nan
     else:
         genres = split[1].split('/')
-        runtime = pd.Timedelta(split[2])        # Could also use datetime.timedelta. Maybe parse the string datetime.datetime.strptime or dateutil.parser
+        runtime = pd.Timedelta(split[2])    # Could also use datetime.timedelta. Maybe parse the string datetime.datetime.strptime or dateutil.parser
 
-    tomato = int(scoreboard.get('tomatometerscore')) if scoreboard.get('tomatometerscore') else None
+    tomato = int(scoreboard.get('tomatometerscore')) if scoreboard.get('tomatometerscore') else np.nan
     audience = int(scoreboard.get('audiencescore')) if scoreboard.get('audiencescore') else np.nan
-    # defaults to 0 if fewer than 50 reviews for the movie. could also be None or NaN or something and then maybe it gets filtered out later.
-    # use np.nan
+    # NaN for missing values. Tomato and audience are missing if fewer than 50 reviews respectively.
 
     print([title, genres, runtime, tomato, audience])
     return [title, genres, runtime, tomato, audience]
@@ -48,15 +46,8 @@ def getMovie(link):
 def getMovies(links, workers=5):
     with ThreadPoolExecutor(workers) as exec:
         return exec.map(getMovie, links)
-    # movies = []
-    # for l in links:
-    #     movies.append(getMovie(l))
-    # return movies
 
 if __name__ == '__main__':
-    # print(getMovie('https://www.rottentomatoes.com/m/yes_god_yes'))
     links = getMovieLinks(2020)
     data = getMovies(links)
     df = pd.DataFrame(data, columns=['Title', 'Genres', 'Runtime', 'Tomato %', 'Audience %'])
-    print(df.head)
-    print(df[df.isna().any(axis=1)])
