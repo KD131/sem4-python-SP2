@@ -62,4 +62,5 @@ def getMovies(year):
 
 if __name__ == '__main__':
     df2020 = getMovies(2020)
-    print(df2020)
+    df2010 = getMovies(2010)
+    df1990 = getMovies(1990)
