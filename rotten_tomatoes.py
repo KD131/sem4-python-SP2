@@ -1,4 +1,5 @@
 from concurrent.futures import ThreadPoolExecutor
+import os
 
 import bs4
 import numpy as np
@@ -40,14 +41,25 @@ def getMovie(link):
     audience = int(scoreboard.get('audiencescore')) if scoreboard.get('audiencescore') else np.nan
     # NaN for missing values. Tomato and audience are missing if fewer than 50 reviews respectively.
 
-    print([title, genres, runtime, tomato, audience])
-    return [title, genres, runtime, tomato, audience]
+    m = [title, genres, runtime, tomato, audience]
+    print(m)
+    return m
 
-def getMovies(links, workers=5):
+def scrapeMovies(links, workers=5):
     with ThreadPoolExecutor(workers) as exec:
         return exec.map(getMovie, links)
 
+def getMovies(year):
+    path = f'movies_{year}.csv'
+    if not os.path.exists(path):
+        links = getMovieLinks(year)
+        data = scrapeMovies(links)
+        df = pd.DataFrame(data, columns=['Title', 'Genres', 'Runtime', 'Tomato %', 'Audience %'])
+        df.to_csv(path, index=False)
+    else:
+        df = pd.read_csv(path)
+    return df
+
 if __name__ == '__main__':
-    links = getMovieLinks(2020)
-    data = getMovies(links)
-    df = pd.DataFrame(data, columns=['Title', 'Genres', 'Runtime', 'Tomato %', 'Audience %'])
+    df2020 = getMovies(2020)
+    print(df2020)
