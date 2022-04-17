@@ -1,6 +1,7 @@
 from concurrent.futures import ThreadPoolExecutor
 
 import bs4
+import numpy as np
 import pandas as pd
 import requests
 
@@ -24,24 +25,33 @@ def getMovie(link):
 
     scoreboard = soup.select_one('score-board.scoreboard')
     title = scoreboard.select_one('.scoreboard__title').text
-    print(title)
+    # print(title)
+    
     info = scoreboard.select_one('.scoreboard__info').text
     split = info.split(', ')
-    genres = split[1].split('/')
-    runtime = pd.Timedelta(split[2])        # Could also use datetime.timedelta. Maybe parse the string datetime.datetime.strptime or dateutil.parser
-    tomato = int(scoreboard.get('tomatometerscore')) if scoreboard.get('tomatometerscore') else 0
-    audience = int(scoreboard.get('audiencescore')) if scoreboard.get('audiencescore') else 0
-    # defaults to 0 if fewer than 50 reviews for the movie. could also be None or NaN or something and then maybe it gets filtered out later.
+    # checks if info is missing values. I could use regex to figure out what values are there, but it might not be worth the effort.
+    if len(split) < 3:
+        genres = None
+        runtime = np.nan
+    else:
+        genres = split[1].split('/')
+        runtime = pd.Timedelta(split[2])        # Could also use datetime.timedelta. Maybe parse the string datetime.datetime.strptime or dateutil.parser
 
+    tomato = int(scoreboard.get('tomatometerscore')) if scoreboard.get('tomatometerscore') else None
+    audience = int(scoreboard.get('audiencescore')) if scoreboard.get('audiencescore') else np.nan
+    # defaults to 0 if fewer than 50 reviews for the movie. could also be None or NaN or something and then maybe it gets filtered out later.
+    # use np.nan
+
+    print([title, genres, runtime, tomato, audience])
     return [title, genres, runtime, tomato, audience]
 
 def getMovies(links, workers=5):
-    # with ThreadPoolExecutor(workers) as exec:
-    #     return exec.map(getMovie, links)
-    movies = []
-    for l in links:
-        movies.append(getMovie(l))
-    return movies
+    with ThreadPoolExecutor(workers) as exec:
+        return exec.map(getMovie, links)
+    # movies = []
+    # for l in links:
+    #     movies.append(getMovie(l))
+    # return movies
 
 if __name__ == '__main__':
     # print(getMovie('https://www.rottentomatoes.com/m/yes_god_yes'))
@@ -49,3 +59,4 @@ if __name__ == '__main__':
     data = getMovies(links)
     df = pd.DataFrame(data, columns=['Title', 'Genres', 'Runtime', 'Tomato %', 'Audience %'])
     print(df.head)
+    print(df[df.isna().any(axis=1)])
