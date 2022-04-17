@@ -39,9 +39,9 @@ def getMovie(link):
     scoreboard = browser.find_element(By.CSS_SELECTOR, 'score-board.scoreboard')
     # print(scoreboard.text)
     # shadow = scoreboard.shadow_root     # would work in a chromium browser
-    shadow = expand_shadow_element(scoreboard)
-    print(shadow[1].text)
-    return None
+    # shadow = expand_shadow_element(scoreboard)
+    # print(shadow[1].text)
+    # return None
     # this doesn't work for some reason
     # .children is a workaround but it would work better in Chrome.
 
@@ -52,15 +52,17 @@ def getMovie(link):
     # And I'll need to run it in Chrome so I'll have to install the webdriver.
 
     title = scoreboard.find_element(By.CSS_SELECTOR, '.scoreboard__title').text
-    print(title)
+    # print(title)
     info = scoreboard.find_element(By.CSS_SELECTOR, '.scoreboard__info').text
     split = info.split(', ')
     genres = split[1].split('/')
     runtime = pd.Timedelta(split[2])        # Could also use datetime.timedelta. Maybe parse the string datetime.datetime.strptime or dateutil.parser
-    tomato = shadow.find_element(By.CSS_SELECTOR, '.tomatometer-container .percentage').text
-    tomato = tomato[:-1]                    # removes last char which is '%'. If needed, can also strip but unnecessary here.
-    audience = shadow.find_element(By.CSS_SELECTOR, '.audience-container .percentage').text
-    audience = audience[:-1]
+    tomato = int(scoreboard.get_attribute('tomatometerscore'))
+    # tomato = tomato[:-1]                    # removes last char which is '%'. If needed, can also strip but unnecessary here.
+    audience = int(scoreboard.get_attribute('audiencescore'))
+    # audience = audience[:-1]
+
+    # I DON'T EVEN NEED SELENIUM AT ALL. MOTHER FUCKER. THE DATA WAS AN ATTRIBUTE OF SCOREBOARD ALL ALONG.
 
     return [title, genres, runtime, tomato, audience]
 
