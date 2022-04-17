@@ -718,3 +718,18 @@ JavaScript warning: https://www.rottentomatoes.com/rt-common.js?seed=AMAZJDWAAQA
 JavaScript warning: https://z.moatads.com/nbcuyieldheader7581548001/moatheader.js, line 215: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 JavaScript warning: https://www.rottentomatoes.com/ML7OOZmwSXheLVUwXuD2UHnHZeY/N3tiDVXrSi/dyIVCmg/MS/oVV3AdOQU, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 JavaScript warning: https://pagead2.googlesyndication.com/bg/jCkUzW4MJun-Op3iOFNjK-GGKJG_m8_dpwU-GZUxlWM.js line 1 > eval line 4266 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1650160837311	geckodriver	INFO	Listening on 127.0.0.1:64868
+1650160840353	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "64869" "-no-remote" "-profile" "C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofileVGXUd4"
+*** You are running in headless mode.
+1650160840654	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kavvt\\AppData\\Local\\Temp\\rust_mozprofileVGXUd4\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64869/devtools/browser/ceae7c93-62e8-4ea8-8597-a06b7cc3c11f
+1650160841741	Marionette	INFO	Listening on port 64874
+1650160841894	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://assets.adobedtm.com/launch-EN549327edc13e414a9beb5d61bfd9aac6.min.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.rottentomatoes.com/m/yes_god_yes line 231 > injectedScript, line 2: TypeError: a is null
+JavaScript warning: https://www.rottentomatoes.com/rt-common.js?seed=AACRPzWAAQAAojIujTcCoTt8W0sXvE5Pw1E9gCl9CQaijuDVSskaZYEK4lAE&HgdtNmCjYr--z=q, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://z.moatads.com/nbcuyieldheader7581548001/moatheader.js, line 215: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.rottentomatoes.com/ML7OOZmwSXheLVUwXuD2UHnHZeY/N3tiDVXrSi/dyIVCmg/MS/oVV3AdOQU, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/jCkUzW4MJun-Op3iOFNjK-GGKJG_m8_dpwU-GZUxlWM.js line 1 > eval line 6516 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.

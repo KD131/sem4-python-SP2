@@ -1,12 +1,8 @@
 from concurrent.futures import ThreadPoolExecutor
-from time import sleep, time
 
 import bs4
 import pandas as pd
 import requests
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.firefox.options import Options
 
 
 def getMovieLinks(year):
@@ -22,59 +18,34 @@ def getMovieLinks(year):
     return [base + e.get('href') for e in elems if e.get('href') and e.get('href').startswith('/')]
 
 def getMovie(link):
-    # r = requests.get(link)
-    # r.raise_for_status()
-    # soup = bs4.BeautifulSoup(r.text, 'html.parser')
-    options = Options()
-    options.headless = True
-    browser = webdriver.Firefox(options=options)
-    browser.get(link)
+    r = requests.get(link)
+    r.raise_for_status()
+    soup = bs4.BeautifulSoup(r.text, 'html.parser')
 
-    
-
-    def expand_shadow_element(element):
-        shadow_root = browser.execute_script('return arguments[0].shadowRoot.children', element)
-        return shadow_root
-
-    scoreboard = browser.find_element(By.CSS_SELECTOR, 'score-board.scoreboard')
-    # print(scoreboard.text)
-    # shadow = scoreboard.shadow_root     # would work in a chromium browser
-    # shadow = expand_shadow_element(scoreboard)
-    # print(shadow[1].text)
-    # return None
-    # this doesn't work for some reason
-    # .children is a workaround but it would work better in Chrome.
-
-    # Running many browsers crashes the whole thing.
-    # And overfills the RAM which then fills up the C drive which is real bad.
-    # I think I'll have to run a single browser, and it'll just take a while.
-    # Then I'll save it to a CSV.
-    # And I'll need to run it in Chrome so I'll have to install the webdriver.
-
-    title = scoreboard.find_element(By.CSS_SELECTOR, '.scoreboard__title').text
-    # print(title)
-    info = scoreboard.find_element(By.CSS_SELECTOR, '.scoreboard__info').text
+    scoreboard = soup.select_one('score-board.scoreboard')
+    title = scoreboard.select_one('.scoreboard__title').text
+    print(title)
+    info = scoreboard.select_one('.scoreboard__info').text
     split = info.split(', ')
     genres = split[1].split('/')
     runtime = pd.Timedelta(split[2])        # Could also use datetime.timedelta. Maybe parse the string datetime.datetime.strptime or dateutil.parser
-    tomato = int(scoreboard.get_attribute('tomatometerscore'))
-    # tomato = tomato[:-1]                    # removes last char which is '%'. If needed, can also strip but unnecessary here.
-    audience = int(scoreboard.get_attribute('audiencescore'))
-    # audience = audience[:-1]
-
-    # I DON'T EVEN NEED SELENIUM AT ALL. MOTHER FUCKER. THE DATA WAS AN ATTRIBUTE OF SCOREBOARD ALL ALONG.
+    tomato = int(scoreboard.get('tomatometerscore')) if scoreboard.get('tomatometerscore') else 0
+    audience = int(scoreboard.get('audiencescore')) if scoreboard.get('audiencescore') else 0
+    # defaults to 0 if fewer than 50 reviews for the movie. could also be None or NaN or something and then maybe it gets filtered out later.
 
     return [title, genres, runtime, tomato, audience]
 
-    
-
 def getMovies(links, workers=5):
-    with ThreadPoolExecutor(workers) as exec:
-        return exec.map(getMovie, links)
+    # with ThreadPoolExecutor(workers) as exec:
+    #     return exec.map(getMovie, links)
+    movies = []
+    for l in links:
+        movies.append(getMovie(l))
+    return movies
 
 if __name__ == '__main__':
-    print(getMovie('https://www.rottentomatoes.com/m/yes_god_yes'))
-    # links = getMovieLinks(2020)
-    # data = getMovies(links)
-    # df = pd.DataFrame(data, columns=['Title', 'Genres', 'Runtime', 'Tomato %', 'Audience %'])
-    # print(df.head)
+    # print(getMovie('https://www.rottentomatoes.com/m/yes_god_yes'))
+    links = getMovieLinks(2020)
+    data = getMovies(links)
+    df = pd.DataFrame(data, columns=['Title', 'Genres', 'Runtime', 'Tomato %', 'Audience %'])
+    print(df.head)
