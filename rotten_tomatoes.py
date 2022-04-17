@@ -30,11 +30,20 @@ def getMovie(link):
     browser = webdriver.Firefox(options=options)
     browser.get(link)
 
+    
+
+    def expand_shadow_element(element):
+        shadow_root = browser.execute_script('return arguments[0].shadowRoot.children', element)
+        return shadow_root
+
     scoreboard = browser.find_element(By.CSS_SELECTOR, 'score-board.scoreboard')
     # print(scoreboard.text)
     # shadow = scoreboard.shadow_root     # would work in a chromium browser
-    shadow = browser.execute_script('return arguments[0].shadowRoot', scoreboard)
+    shadow = expand_shadow_element(scoreboard)
+    print(shadow[1].text)
+    return None
     # this doesn't work for some reason
+    # .children is a workaround but it would work better in Chrome.
 
     # Running many browsers crashes the whole thing.
     # And overfills the RAM which then fills up the C drive which is real bad.
@@ -54,6 +63,8 @@ def getMovie(link):
     audience = audience[:-1]
 
     return [title, genres, runtime, tomato, audience]
+
+    
 
 def getMovies(links, workers=5):
     with ThreadPoolExecutor(workers) as exec:
