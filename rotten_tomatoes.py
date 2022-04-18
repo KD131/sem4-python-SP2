@@ -1,5 +1,5 @@
-from concurrent.futures import ThreadPoolExecutor
 import os
+from concurrent.futures import ThreadPoolExecutor
 
 import bs4
 import numpy as np
@@ -7,7 +7,7 @@ import pandas as pd
 import requests
 
 
-def getMovieLinks(year):
+def get_movie_links(year):
     base = 'https://www.rottentomatoes.com'
     url = base + '/top/bestofrt/'
     params = {'year': year}
@@ -19,7 +19,7 @@ def getMovieLinks(year):
     elems = soup.select('#top_movies_main a.articleLink')
     return [base + e.get('href') for e in elems if e.get('href') and e.get('href').startswith('/')]
 
-def getMovie(link):
+def get_movie(link):
     r = requests.get(link)
     r.raise_for_status()
     soup = bs4.BeautifulSoup(r.text, 'html.parser')
@@ -45,22 +45,22 @@ def getMovie(link):
     print(m)
     return m
 
-def scrapeMovies(links, workers=5):
+def scrape_movies(links, workers=5):
     with ThreadPoolExecutor(workers) as exec:
-        return exec.map(getMovie, links)
+        return exec.map(get_movie, links)
 
-def getMovies(year):
+def get_movies(year):
     path = f'movies_{year}.csv'
     if not os.path.exists(path):
-        links = getMovieLinks(year)
-        data = scrapeMovies(links)
+        links = get_movie_links(year)
+        data = scrape_movies(links)
         df = pd.DataFrame(data, columns=['Title', 'Genres', 'Runtime', 'Tomato %', 'Audience %'])
         df.to_csv(path, index=False)
     else:
         df = pd.read_csv(path)
     return df
 
-def avgAudiencePerGenre(data):
+def avg_audience_per_genre(data):
     unique = []
     for index, value in data['Genres'].items():
         print(index, value)
@@ -71,7 +71,7 @@ def avgAudiencePerGenre(data):
     print(unique)
     # I need to redesign the dataframe. Each genre should be a column.
 
-def cleanData(data):
+def clean_data(data):
     mask_score = data['Tomato %'].notna() & data['Audience %'].notna()
     mask_genre = data['Genres'].notna()
     mask_runtime = data['Runtime'].notna()
@@ -79,10 +79,10 @@ def cleanData(data):
 
 
 if __name__ == '__main__':
-    df2020 = getMovies(2020)
-    df2010 = getMovies(2010)
-    df1990 = getMovies(1990)
+    df2020 = get_movies(2020)
+    df2010 = get_movies(2010)
+    df1990 = get_movies(1990)
 
-    df2020 = cleanData(df2020)
+    df2020 = clean_data(df2020)
 
-    avgAudiencePerGenre(df2020)
+    avg_audience_per_genre(df2020)
