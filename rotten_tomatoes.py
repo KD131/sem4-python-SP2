@@ -70,6 +70,11 @@ def avg_audience_per_genre(data):
 
     print(unique)
     # I need to redesign the dataframe. Each genre should be a column.
+    # An ugly solution is to just evaluate a list from the string representation. But that would still be annoying to iterate through.
+    # Each movie could return a single-row dataframe with the genres as columns,
+    # and then they would be concatted together with presumably NaN for missing values.
+    # Trouble is still gonna be harmonising the datasets between different years as there's no guarantee that they have the same genres.
+    # You could also concat those together. Then you just need a 'Year' column to separate them again.
 
 def clean_data(data):
     mask_score = data['Tomato %'].notna() & data['Audience %'].notna()
