@@ -55,13 +55,13 @@ def scrape_movies(links, workers=5):
         return exec.map(get_movie, links)
 
 # I think I got rate limited or something. Scraping now returns 403 Forbidden.
-def get_movies(year):
+def get_movies(year, refresh=False):
     path = f'movies_{year}.csv'
-    if not os.path.exists(path):
+    if not os.path.exists(path) or refresh:
         links = get_movie_links(year)
         data = scrape_movies(links, year)
         df = pd.DataFrame(data)
-        df = df.insert(4, 'Year', year)
+        df.insert(4, 'Year', year)
         df.to_csv(path, index=False)
     else:
         df = pd.read_csv(path)
@@ -75,7 +75,6 @@ def plot_avg_audience_per_genre(df1, df2):
     # Or just do it manually.
     combined = pd.concat([df1, df2], ignore_index=True)
     genres = combined.columns[5:]
-    print(genres)
     values1 = [combined[(combined['Year'] == 2010) & combined[g].notna()]['Audience %'].mean() for g in genres]
     values2 = [combined[(combined['Year'] == 2020) & combined[g].notna()]['Audience %'].mean() for g in genres]
 
