@@ -19,12 +19,11 @@ Datasæt:
 4. Hvad er den gennemsnitlige runtime for genren 'drama' i 2010 og 2020?
 
 # Status
-**Copied from last SP. Edit later.**
 
-1-5 solved. 6 half solved because the map already interactive through using Markers in Folium.
+1-2 + 4 solved.
 
-To run it, just execute the python file like so: `python cph_monuments.py`
+To run it, just execute the python file like so: `python rotten_tomatoes.py`
 
-The script will print various results of the exercises and also create two map files.
+If the CSV files `movies_year.csv` are not present in the folder, it will attempt to scrape the data and save it to CSV. You can also force this behaviour by passing `refresh=True` to the `get_movies()` function.
 
-You can view the resulting maps by opening `single_monument.html` or `all_monuments.html`.
+The script will show a plot of the average audience rating of each genre for 2010 and 2020. After closing the plot window, it will then print the average runtime of dramas for 2010 and 2020.
