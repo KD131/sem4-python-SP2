@@ -60,7 +60,29 @@ def getMovies(year):
         df = pd.read_csv(path)
     return df
 
+def avgAudiencePerGenre(data):
+    unique = []
+    for index, value in data['Genres'].items():
+        print(index, value)
+        for genre in list(value):
+            if genre not in unique:
+                unique.append(genre)
+
+    print(unique)
+    # I need to redesign the dataframe. Each genre should be a column.
+
+def cleanData(data):
+    mask_score = data['Tomato %'].notna() & data['Audience %'].notna()
+    mask_genre = data['Genres'].notna()
+    mask_runtime = data['Runtime'].notna()
+    return data[mask_score & mask_genre & mask_runtime]
+
+
 if __name__ == '__main__':
     df2020 = getMovies(2020)
     df2010 = getMovies(2010)
     df1990 = getMovies(1990)
+
+    df2020 = cleanData(df2020)
+
+    avgAudiencePerGenre(df2020)
