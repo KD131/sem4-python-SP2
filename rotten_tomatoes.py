@@ -31,7 +31,7 @@ def get_movie(link):
     split = info.split(', ')
     # checks if info is missing values. I could use regex to figure out what values are there, but it might not be worth the effort.
     if len(split) < 3:
-        genres = np.nan
+        genres = []
         runtime = np.nan
     else:
         genres = split[1].split('/')
@@ -41,7 +41,10 @@ def get_movie(link):
     audience = int(scoreboard.get('audiencescore')) if scoreboard.get('audiencescore') else np.nan
     # NaN for missing values. Tomato and audience are missing if fewer than 50 reviews respectively.
 
-    m = [title, genres, runtime, tomato, audience]
+    m = {'Title': title, 'Runtime': runtime, 'Tomato %': tomato, 'Audience %': audience}
+    for g in genres:
+        m[g] = True
+    
     print(m)
     return m
 
@@ -54,31 +57,26 @@ def get_movies(year):
     if not os.path.exists(path):
         links = get_movie_links(year)
         data = scrape_movies(links)
-        df = pd.DataFrame(data, columns=['Title', 'Genres', 'Runtime', 'Tomato %', 'Audience %'])
+        df = pd.DataFrame(data)
         df.to_csv(path, index=False)
     else:
         df = pd.read_csv(path)
     return df
 
 def avg_audience_per_genre(data):
-    unique = []
-    for index, value in data['Genres'].items():
-        print(index, value)
-        for genre in list(value):
-            if genre not in unique:
-                unique.append(genre)
+    genres = data.columns[5:]
+    print(genres)
 
-    print(unique)
-    # I need to redesign the dataframe. Each genre should be a column.
-    # An ugly solution is to just evaluate a list from the string representation. But that would still be annoying to iterate through.
-    # Each movie could return a single-row dataframe with the genres as columns,
-    # and then they would be concatted together with presumably NaN for missing values.
-    # Trouble is still gonna be harmonising the datasets between different years as there's no guarantee that they have the same genres.
-    # You could also concat those together. Then you just need a 'Year' column to separate them again.
+# I need to redesign the dataframe. Each genre should be a column.
+# An ugly solution is to just evaluate a list from the string representation. But that would still be annoying to iterate through.
+# Each movie could return a single-row dataframe with the genres as columns,
+# and then they would be concatted together with presumably NaN for missing values.
+# Trouble is still gonna be harmonising the datasets between different years as there's no guarantee that they have the same genres.
+# You could also concat those together. Then you just need a 'Year' column to separate them again.
 
 def clean_data(data):
     mask_score = data['Tomato %'].notna() & data['Audience %'].notna()
-    mask_genre = data['Genres'].notna()
+    mask_genre = data.iloc[:, 5:].any()
     mask_runtime = data['Runtime'].notna()
     return data[mask_score & mask_genre & mask_runtime]
 
