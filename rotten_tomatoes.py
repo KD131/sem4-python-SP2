@@ -106,6 +106,11 @@ def clean_data(data):
     mask_runtime = data['Runtime'].notna()
     return data[mask_score & mask_genre & mask_runtime]
 
+def avg_runtime(data, year, genre):
+    strs = data[(data['Year'] == year) & data[genre].notna()]['Runtime']
+    tds = pd.to_timedelta(strs)
+    return tds.mean()
+
 
 if __name__ == '__main__':
     df2020 = get_movies(2020)
@@ -117,3 +122,6 @@ if __name__ == '__main__':
     df1990 = clean_data(df1990)
 
     plot_avg_audience_per_genre(df2020, df2010)
+
+    print("Avg. runtime of dramas in 2010: " + str(avg_runtime(df2010, 2010, 'Drama')))
+    print("Avg. runtime of dramas in 2020: " + str(avg_runtime(df2020, 2020, 'Drama')))
