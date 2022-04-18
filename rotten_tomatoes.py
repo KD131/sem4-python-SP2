@@ -2,6 +2,7 @@ import os
 from concurrent.futures import ThreadPoolExecutor
 
 import bs4
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import requests
@@ -30,6 +31,7 @@ def get_movie(link):
     info = scoreboard.select_one('.scoreboard__info').text
     split = info.split(', ')
     # checks if info is missing values. I could use regex to figure out what values are there, but it might not be worth the effort.
+    # I could grab info from further down the page. I beleive there are also more genres there.
     if len(split) < 3:
         genres = []
         runtime = np.nan
@@ -52,20 +54,45 @@ def scrape_movies(links, workers=5):
     with ThreadPoolExecutor(workers) as exec:
         return exec.map(get_movie, links)
 
+# I think I got rate limited or something. Scraping now returns 403 Forbidden.
 def get_movies(year):
     path = f'movies_{year}.csv'
     if not os.path.exists(path):
         links = get_movie_links(year)
-        data = scrape_movies(links)
+        data = scrape_movies(links, year)
         df = pd.DataFrame(data)
+        df = df.insert(4, 'Year', year)
         df.to_csv(path, index=False)
     else:
         df = pd.read_csv(path)
     return df
 
-def avg_audience_per_genre(data):
-    genres = data.columns[5:]
+def plot_avg_audience_per_genre(df1, df2):
+    # I concat data as a way of synchronising all datasets have the same genre columns.
+    # This will be a little less tidy and more hard-coded.
+    # There's probably a way to just have Pandas plot it, but I might have to go into multi-indexing or something and I don't want to deal with that.
+    # Or just get the data, make a new DataFrame specifically for plotting, and just have it do it.
+    # Or just do it manually.
+    combined = pd.concat([df1, df2], ignore_index=True)
+    genres = combined.columns[5:]
     print(genres)
+    values1 = [combined[(combined['Year'] == 2010) & combined[g].notna()]['Audience %'].mean() for g in genres]
+    values2 = [combined[(combined['Year'] == 2020) & combined[g].notna()]['Audience %'].mean() for g in genres]
+
+    n = len(genres)
+    i = np.arange(n)
+    w = 0.35
+
+    fig, ax = plt.subplots()
+
+    ax.bar(i, values1, w, label='2010')
+    ax.bar(i + w, values2, w, label='2020')
+
+    ax.set_title('Avg. audience score % per genre')
+    ax.set_xticks(i + w / 2, labels=genres, rotation=45, horizontalalignment="right")
+
+    ax.legend()
+    plt.show()
 
 # I need to redesign the dataframe. Each genre should be a column.
 # An ugly solution is to just evaluate a list from the string representation. But that would still be annoying to iterate through.
@@ -76,7 +103,7 @@ def avg_audience_per_genre(data):
 
 def clean_data(data):
     mask_score = data['Tomato %'].notna() & data['Audience %'].notna()
-    mask_genre = data.iloc[:, 5:].any()
+    mask_genre = data.iloc[:, 5:].any(axis=1)
     mask_runtime = data['Runtime'].notna()
     return data[mask_score & mask_genre & mask_runtime]
 
@@ -87,5 +114,7 @@ if __name__ == '__main__':
     df1990 = get_movies(1990)
 
     df2020 = clean_data(df2020)
+    df2010 = clean_data(df2010)
+    df1990 = clean_data(df1990)
 
-    avg_audience_per_genre(df2020)
+    plot_avg_audience_per_genre(df2020, df2010)
